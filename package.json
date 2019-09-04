@@ -1,0 +1,35 @@
+{
+  "name": "MyTestApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest",
+    "run:android": "react-native run-android",
+    "run:ios": "react-native run-ios",
+    "build": "sh ./shell/release.sh",
+    "clean": "sh ./shell/clean.sh",
+    "echo": "sh ./shell/echo.sh",
+    "upload:android": "sh ./shell/upload-apk-android.sh",
+    "hotfix:android": "sh ./shell/hotfix-android.sh",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "16.8.6",
+    "react-native": "0.60.5",
+    "react-native-update": "^5.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.3.0",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.56.0",
+    "react-test-renderer": "16.8.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
